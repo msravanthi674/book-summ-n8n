@@ -1,0 +1,265 @@
+{
+  "name": "book-summarization",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            },
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "1_cyKjfzwZHPJfKO728h7C3caclGZRjBN",
+          "mode": "id"
+        },
+        "event": "fileCreated",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        496,
+        224
+      ],
+      "id": "8c77ccbf-b853-4156-94b4-6255f5d9b56c",
+      "name": "Google Drive Trigger",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "8A4O7qFEgtxPj9mt",
+          "name": "Google Drive account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json[\"id\"] }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        704,
+        0
+      ],
+      "id": "cca5ae8f-1973-4731-bcd7-159d5daa8e72",
+      "name": "Download file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "8A4O7qFEgtxPj9mt",
+          "name": "Google Drive account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        912,
+        224
+      ],
+      "id": "2eee6567-4060-4f16-aaf5-26286ee37aaa",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "jsCode": "const text = $json[\"text\"]; // Extracted text from the previous node\nconst chunkSize =1000; // Approximate number of characters per chunk\nlet chunks = [];\n\n// Split text into chunks\nfor (let i = 0; i < text.length; i += chunkSize) {\n  chunks.push({ chunk: text.substring(i, i + chunkSize) });\n}\n\nreturn chunks;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1024,
+        16
+      ],
+      "id": "5d6b9045-41bd-44df-9d9c-2acaa0bdfc3b",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Summarize the following text in a structured format:\n- STACK \n- QUEUE\n- Linked List Implementation of Queue\n\nText : {{($json[\"chunk\"])}}",
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        1232,
+        -16
+      ],
+      "id": "eb6bb8be-27ea-4cb7-8278-e9dabbb1ed2b",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": "ministral-8b-latest",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatMistralCloud",
+      "typeVersion": 1,
+      "position": [
+        1216,
+        176
+      ],
+      "id": "294fea58-97ad-49b8-ba05-eb5e1d225d24",
+      "name": "Mistral Cloud Chat Model",
+      "credentials": {
+        "mistralCloudApi": {
+          "id": "3h1kmGA6XpdinVkA",
+          "name": "Mistral Cloud account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Ensure there are valid input items\nif ($items().length === 0) {\n  return [{ json: { error: \"No input data received\" } }];\n}\n\n// Extract text fields, ensuring they exist\n// This assumes the input items to THIS script have a 'text' field\nconst summaries = $items()\n  .map(item => item.json?.text?.trim()) // Extract and trim text\n  .filter(text => text); // Remove empty values\n\n// Debugging: Log extracted summaries (Optional, for debugging)\n// console.log(\"Extracted Summaries:\", summaries);\n\n// From Screenshot 2025-08-13 102601.png\n// Ensure we have valid text before proceeding\nif (summaries.length === 0) {\n  return [{ json: { error: \"No valid text found\" } }];\n}\n\n// Combine all text into a single structured summary\nconst finalSummary = summaries.join(\"\\n\\n\");\n\n// From Screenshot 2025-08-13 102641.png\n// Convert to Base64 for binary file output\nconst encodedSummary = Buffer.from(finalSummary, \"utf-8\").toString(\"base64\");\n\n// From Screenshot 2025-08-13 102223.png\n// Return binary file output\nreturn [{\n  json: {}, // You might want to include some metadata in the JSON output here\n  binary: {\n    file: {\n      data: encodedSummary, // Base64 encoded text\n      mimeType: \"text/plain\",\n      fileName: \"summary.txt\",\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1520,
+        176
+      ],
+      "id": "c2e81ede-fc67-430d-8f1f-7359b117dc50",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "=file",
+        "name": "={{ $binary.file.fileName }}",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1_cyKjfzwZHPJfKO728h7C3caclGZRjBN",
+          "mode": "list",
+          "cachedResultName": "book-summ",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1_cyKjfzwZHPJfKO728h7C3caclGZRjBN"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1712,
+        64
+      ],
+      "id": "89204ae9-e223-47e6-b6c2-5cb7614118d9",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "8A4O7qFEgtxPj9mt",
+          "name": "Google Drive account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Drive Trigger": {
+      "main": [
+        [
+          {
+            "node": "Download file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mistral Cloud Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "5b714aa9-1b0c-48f4-9c36-9dc032ec22f4",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5c8ca29410ebb5af8b55a47e6fee15b1fb7bfce48ea5b109c23288bd0889c012"
+  },
+  "id": "acSMHV0L31EALIW9",
+  "tags": []
+}

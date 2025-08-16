@@ -1,0 +1,1654 @@
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list.
+- **Nodes**:
+  - **Data**: Stores the element.
+  - **Next**: Points to the next node in the queue.
+- **Operations**:
+  - **Enqueue**:
+    1. Create a new node with the given data.
+    2. If the queue is empty, set the new node as the front.
+    3. Otherwise, append the new node to the rear.
+  - **Dequeue**:
+    1. If the queue is empty, return an error.
+    2. Otherwise, remove the front node and update the front pointer.
+  - **Front/Peek**:
+    1. If the queue is empty, return an error.
+    2. Otherwise, return the data of the front node.
+  - **IsEmpty**:
+    1. Check if the front is null.
+    2. Return true if the front is null, otherwise return false.
+
+This structured format provides a clear overview of the key concepts and operations for both stacks and queues, as well as a detailed implementation of a queue using a linked list.
+
+Certainly! Below is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- **Definition**: A queue can be implemented using a linked list, where each element (node) contains data and a pointer to the next node.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front and the rear.
+    - Otherwise, set the new node as the rear and update the rear pointer.
+  - **Dequeue**:
+    - If the queue is empty, return an error or null.
+    - Otherwise, remove the front node and update the front pointer.
+    - If the queue becomes empty, update the rear pointer to null.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if both the front and rear pointers are null.
+
+This structured format provides a clear overview of the data structures and their operations, specifically focusing on the linked list implementation of a queue.
+
+Certainly! Here is the structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- Operations:
+  - `push`: Adds an element to the top of the stack.
+  - `pop`: Removes the top element from the stack.
+  - `peek`: Returns the top element without removing it.
+  - `isEmpty`: Checks if the stack is empty.
+
+#### QUEUE
+- A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- Operations:
+  - `enqueue`: Adds an element to the end of the queue.
+  - `dequeue`: Removes the element from the front of the queue.
+  - `peek`: Returns the front element without removing it.
+  - `isEmpty`: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- A queue can be implemented using a linked list.
+- **Node Structure**:
+  - Each node contains data and a reference to the next node.
+- **Operations**:
+  - `enqueue`: Adds a new node to the end of the queue.
+  - `dequeue`: Removes the node from the front of the queue.
+  - `peek`: Returns the data of the front node without removing it.
+  - `isEmpty`: Checks if the queue is empty.
+
+This structured format provides a clear overview of the stack, queue, and the linked list implementation of a queue.
+
+Certainly! Here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- **Definition**: A queue implemented using a linked list allows for efficient insertion and deletion of elements.
+- **Operations**:
+  - **Enqueue**: Adds a new node at the end of the linked list.
+  - **Dequeue**: Removes the node from the front of the linked list.
+  - **Front/Peek**: Returns the value of the front node without removing it.
+  - **IsEmpty**: Checks if the linked list (queue) is empty.
+- **Advantages**:
+  - **Dynamic Size**: Can grow and shrink as needed.
+  - **Efficient Deletion**: Deletion of the front element is efficient as it only requires updating the front pointer.
+- **Disadvantages**:
+  - **Efficient Insertion**: Insertion at the front is not efficient as it requires traversing the list.
+  - **Memory Overhead**: Requires additional memory for pointers.
+
+This structured format provides a clear overview of the key concepts and operations related to stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Below is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+  - **Size**: Returns the number of elements in the stack.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+  - **Size**: Returns the number of elements in the queue.
+
+### Linked List Implementation of Queue
+
+- **Node Structure**:
+  - Each node contains data and a reference to the next node.
+
+- **Queue Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, append the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or null.
+    - Otherwise, remove the front node and update the front reference to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front is null.
+  - **Size**:
+    - Traverse the queue and count the number of nodes.
+
+This structured format provides a clear overview of the STACK, QUEUE, and their linked list implementation.
+
+Certainly! Here is the structured summary of the text:
+
+### Data Structures
+1. **STACK**
+   - A linear data structure that follows the Last-In-First-Out (LIFO) principle.
+   - Elements are added and removed from the same end, known as the top of the stack.
+
+2. **QUEUE**
+   - A linear data structure that follows the First-In-First-Out (FIFO) principle.
+   - Elements are added to the rear (enqueue) and removed from the front (dequeue).
+
+### Linked List Implementation of Queue
+- **Node Structure**:
+  - Each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front**: Returns the front element of the queue.
+  - **Rear**: Returns the rear element of the queue.
+  - **IsEmpty**: Checks if the queue is empty.
+
+This summary captures the essential aspects of the given text.
+
+Sure, here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+#### Linked List
+- **Definition**: A linked list is a linear data structure where each element (node) contains a data field and a reference (link) to the next node in the sequence.
+
+#### Queue Implementation using Linked List
+- **Node Structure**:
+  - **Data**: Stores the value.
+  - **Next**: Points to the next node in the queue.
+
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, append the new node to the rear of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or null.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null.
+
+This structured format provides a clear overview of the key concepts and operations related to stacks, queues, and the implementation of a queue using a linked list.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue implemented using a linked list allows for efficient insertion and deletion operations.
+- **Node Structure**:
+  - **Data**: The value stored in the node.
+  - **Next**: A reference to the next node in the list.
+
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, traverse to the end of the queue and set the next pointer of the last node to the new node.
+  - **Dequeue**:
+    - If the queue is empty, return an error or handle it accordingly.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Here's the structured summary of the text:
+
+### Data Structures
+- **STACK**
+  - A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+  - Operations:
+    - **Push**: Adds an element to the top of the stack.
+    - **Pop**: Removes the top element from the stack.
+    - **Peek/Top**: Returns the top element without removing it.
+    - **IsEmpty**: Checks if the stack is empty.
+
+- **QUEUE**
+  - A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+  - Operations:
+    - **Enqueue**: Adds an element to the end of the queue.
+    - **Dequeue**: Removes the element from the front of the queue.
+    - **Peek/Front**: Returns the front element without removing it.
+    - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+- **Node Structure**
+  - Each node in the linked list contains:
+    - **Data**: The value stored in the node.
+    - **Next**: A reference to the next node in the list.
+
+- **Queue Operations**
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, append the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or a special value.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Peek/Front**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front node is null.
+
+This structured format provides a clear overview of the key concepts and operations related to stacks, queues, and their implementation using linked lists.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes the front element from the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+#### Linked List
+- **Definition**: A linked list is a linear data structure where each element is a separate object. Each element (node) contains a data field and a reference (link) to the next node in the sequence.
+
+#### Queue Implementation Using Linked List
+- **Node Structure**:
+  - **Data**: Stores the element.
+  - **Next**: Points to the next node in the queue.
+
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, add the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or null.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null.
+
+This structured format provides a clear overview of the stack, queue, and the linked list implementation of a queue.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Views the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Views the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+#### Linked List
+- **Definition**: A linked list is a linear data structure where each element is a separate object. Each element (node) contains a data field and a reference (link) to the next node in the sequence.
+
+#### Queue Implementation
+- **Node Structure**:
+  - **Data**: Holds the value of the queue element.
+  - **Next**: Points to the next node in the queue.
+
+- **Queue Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, add the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error.
+    - Otherwise, remove the front node and update the front pointer.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front node is null.
+
+This structured format provides a clear overview of the key concepts and operations related to stacks, queues, and their linked list implementation.
+
+Sure, here is the structured summary of the text:
+
+### Data Structures
+- **STACK**
+  - **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+  - **Operations**:
+    - **Push**: Adds an element to the top of the stack.
+    - **Pop**: Removes the top element from the stack.
+    - **Peek/Top**: Returns the top element without removing it.
+    - **IsEmpty**: Checks if the stack is empty.
+
+- **QUEUE**
+  - **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+  - **Operations**:
+    - **Enqueue**: Adds an element to the end of the queue.
+    - **Dequeue**: Removes the element from the front of the queue.
+    - **Front/Peek**: Returns the front element without removing it.
+    - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+- **Definition**: A queue can be implemented using a linked list, where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**: Adds a new node at the end of the linked list.
+  - **Dequeue**: Removes the node at the front of the linked list.
+  - **Front/Peek**: Returns the data of the front node without removing it.
+  - **IsEmpty**: Checks if the linked list is empty.
+
+This structured format provides a clear overview of the concepts and operations for both stacks and queues, as well as how a queue can be implemented using a linked list.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Retrieves the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Retrieves the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+#### Linked List
+- **Definition**: A linked list is a linear data structure where each element is a separate object.
+- **Structure**:
+  - **Node**: Each element in the list consists of a data field and a reference (or pointer) to the next node.
+  - **Head**: Points to the first node in the list.
+  - **Tail**: Points to the last node in the list.
+
+#### Queue Implementation
+- **Node Structure**:
+  ```python
+  class Node:
+      def __init__(self, data):
+          self.data = data
+          self.next = None
+  ```
+- **Queue Class**:
+  ```python
+  class Queue:
+      def __init__(self):
+          self.front = None
+          self.rear = None
+
+      def isEmpty(self):
+          return self.front is None
+
+      def enqueue(self, data):
+          new_node = Node(data)
+          if self.rear is None:
+              self.front = self.rear = new_node
+          else:
+              self.rear.next = new_node
+              self.rear = new_node
+
+      def dequeue(self):
+          if self.isEmpty():
+              return None
+          temp = self.front
+          self.front = self.front.next
+          if self.front is None:
+              self.rear = None
+          return temp.data
+
+      def front(self):
+          if self.isEmpty():
+              return None
+          return self.front.data
+
+      def rear(self):
+          if self.isEmpty():
+              return None
+          return self.rear.data
+  ```
+
+This structured format provides a clear overview of the stack and queue data structures, as well as a linked list implementation of a queue.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Retrieves the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Retrieves the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list, where each element (node) contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**: Adds a new node to the end of the linked list.
+  - **Dequeue**: Removes the node from the front of the linked list.
+  - **Front/Peek**: Retrieves the data from the front node without removing it.
+  - **IsEmpty**: Checks if the linked list is empty.
+
+This structured format outlines the key concepts and operations for both stacks and queues, as well as how a queue can be implemented using a linked list.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- **Definition**: A queue implemented using a linked list allows for efficient enqueue and dequeue operations.
+- **Structure**:
+  - **Node**: Each node contains data and a pointer to the next node.
+  - **Front and Rear Pointers**: The front pointer points to the front node, and the rear pointer points to the last node.
+- **Operations**:
+  - **Enqueue**:
+    1. Create a new node with the given data.
+    2. If the queue is empty, set both front and rear pointers to the new node.
+    3. Otherwise, set the next pointer of the current rear node to the new node and update the rear pointer.
+  - **Dequeue**:
+    1. If the queue is empty, return an error or handle it appropriately.
+    2. Otherwise, store the data of the front node.
+    3. Move the front pointer to the next node.
+    4. If the front pointer becomes null, update the rear pointer as well.
+  - **Front/Peek**: Return the data of the front node without removing it.
+  - **IsEmpty**: Check if both the front and rear pointers are null.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Here is the summarized structured format of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- **Definition**: A queue implemented using a linked list where each element is a node containing data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, append the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or handle it accordingly.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null.
+
+This summary provides a structured overview of the key concepts and operations for stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Here is the summarized text in a structured format:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+#### Definition
+- A queue can be implemented using a linked list to provide dynamic resizing and efficient insertion and deletion operations.
+
+#### Operations
+- **Enqueue**:
+  - Create a new node with the given data.
+  - Set the next pointer of the new node to the current tail.
+  - Update the tail pointer to the new node.
+- **Dequeue**:
+  - Check if the queue is empty.
+  - If not, remove the head node.
+  - Update the head pointer to the next node.
+  - If the queue becomes empty, update the tail pointer to null.
+- **Front/Peek**:
+  - Return the data of the head node without removing it.
+- **IsEmpty**:
+  - Check if both the head and tail pointers are null.
+
+This structured format provides a clear overview of the stack and queue data structures, along with a detailed explanation of how a queue can be implemented using a linked list.
+
+Certainly! Here’s a structured summary of the text:
+
+### Data Structures:
+1. **STACK**
+   - Last-In-First-Out (LIFO) data structure.
+   - Operations: `push` (add element to top), `pop` (remove element from top), `peek` (view top element).
+
+2. **QUEUE**
+   - First-In-First-Out (FIFO) data structure.
+   - Operations: `enqueue` (add element to rear), `dequeue` (remove element from front), `peek` (view front element).
+
+### Linked List Implementation of Queue:
+- **Node Structure**:
+  - Each node contains data and a reference to the next node.
+- **Queue Operations**:
+  - **enqueue**: Add a new node to the rear of the queue.
+  - **dequeue**: Remove the node from the front of the queue.
+  - **peek**: View the front node without removing it.
+- **Implementation**:
+  - Use a `head` pointer to the front node and a `tail` pointer to the rear node.
+  - When enqueuing, add a new node at the end and update the `tail` pointer.
+  - When dequeuing, remove the node at the front and update the `head` pointer.
+  - Special cases: Handle empty queue scenarios appropriately.
+
+Certainly! Here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list, where each node contains data and a pointer to the next node.
+- **Operations**:
+  - **Enqueue**: Create a new node and add it to the end of the queue.
+  - **Dequeue**: Remove the node from the front of the queue and update the front pointer.
+  - **Front/Peek**: Access the data of the front node without removing it.
+  - **IsEmpty**: Check if the front pointer is null.
+
+This structured format provides a clear overview of the key concepts and operations associated with stacks, queues, and the linked list implementation of a queue.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list, where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**: Create a new node with the given data and append it to the end of the queue.
+  - **Dequeue**: Remove the node from the front of the queue and update the front pointer accordingly.
+  - **Front/Peek**: Return the data of the front node without removing it.
+  - **IsEmpty**: Check if the front pointer is null, indicating that the queue is empty.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Here is a structured summary of the provided text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue implemented using a linked list.
+- **Advantages**:
+  - Dynamic size.
+  - Efficient insertion and deletion at both ends.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+- **Implementation**:
+  - **Node Structure**:
+    ```python
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.next = None
+    ```
+  - **Queue Class**:
+    ```python
+    class Queue:
+        def __init__(self):
+            self.front = None
+            self.rear = None
+
+        def enqueue(self, data):
+            new_node = Node(data)
+            if self.rear is None:
+                self.front = self.rear = new_node
+            else:
+                self.rear.next = new_node
+                self.rear = new_node
+
+        def dequeue(self):
+            if self.front is None:
+                return None
+            data = self.front.data
+            self.front = self.front.next
+            if self.front is None:
+                self.rear = None
+            return data
+
+        def front(self):
+            if self.front is None:
+                return None
+            return self.front.data
+
+        def is_empty(self):
+            return self.front is None
+    ```
+
+This structured format provides a clear overview of the STACK and QUEUE data structures, as well as the linked list implementation of a queue.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue implemented using a linked list.
+- **Key Points**:
+  - **Node Structure**: Each node contains data and a reference to the next node.
+  - **Operations**:
+    - **Enqueue**: Adds a new node at the end of the queue.
+    - **Dequeue**: Removes the node from the front of the queue.
+    - **Front/Peek**: Returns the data of the front node without removing it.
+    - **IsEmpty**: Checks if the queue is empty by verifying if the front node is null.
+  - **Advantages**:
+    - Dynamic size, can grow and shrink as needed.
+    - Efficient for operations that require frequent insertions and deletions at both ends.
+  - **Disadvantages**:
+    - Accessing elements in the middle of the queue is not efficient.
+    - Requires additional memory for pointers.
+
+This structured format provides a clear overview of the STACK, QUEUE, and Linked List implementation of a queue.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+1. **STACK**
+   - A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+   - Operations:
+     - **Push**: Adds an element to the top of the stack.
+     - **Pop**: Removes the top element from the stack.
+     - **Peek/Top**: Returns the top element without removing it.
+     - **IsEmpty**: Checks if the stack is empty.
+
+2. **QUEUE**
+   - A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+   - Operations:
+     - **Enqueue**: Adds an element to the end of the queue.
+     - **Dequeue**: Removes the element from the front of the queue.
+     - **Front/Peek**: Returns the front element without removing it.
+     - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Node Structure**:
+  - Each node contains:
+    - **Data**: The value stored in the node.
+    - **Next**: A pointer/reference to the next node in the queue.
+
+- **Queue Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front node.
+    - Otherwise, append the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or handle it appropriately.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front node is null; if so, the queue is empty.
+
+This summary provides a concise overview of the key concepts and operations for stacks, queues, and their implementation using linked lists.
+
+Certainly! Here is a structured summary of the given text:
+
+### Data Structures
+
+1. **STACK**
+   - **Description**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+   - **Operations**:
+     - **Push**: Adds an element to the top of the stack.
+     - **Pop**: Removes the top element from the stack.
+     - **Peek/Top**: Returns the top element without removing it.
+     - **IsEmpty**: Checks if the stack is empty.
+
+2. **QUEUE**
+   - **Description**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+   - **Operations**:
+     - **Enqueue**: Adds an element to the end of the queue.
+     - **Dequeue**: Removes the element from the front of the queue.
+     - **Front/Peek**: Returns the front element without removing it.
+     - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Description**: A queue can be implemented using a linked list, where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, make the new node the front node.
+    - Otherwise, append the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or null.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front node is null.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and the linked list implementation of a queue.
+
+Here's a structured summary of the provided text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+  - **Size**: Returns the number of elements in the stack.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes the front element from the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+  - **Size**: Returns the number of elements in the queue.
+
+### Linked List Implementation of Queue
+
+#### Linked List
+- **Definition**: A linked list is a linear data structure where each element is a separate object. Each element (node) contains a data field and a reference (link) to the next node in the sequence.
+
+#### Queue Implementation using Linked List
+- **Node Structure**:
+  - **Data**: Holds the value of the queue element.
+  - **Next**: Points to the next node in the queue.
+
+- **Queue Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, add the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or handle it appropriately.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front node is null.
+  - **Size**:
+    - Traverse the queue and count the number of nodes.
+
+This structured format provides a clear overview of the data structures and their implementations.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+- **STACK**
+  - A linear data structure that follows the Last-In-First-Out (LIFO) principle.
+  - Operations: Push (add an element), Pop (remove the top element), Peek (view the top element).
+
+- **QUEUE**
+  - A linear data structure that follows the First-In-First-Out (FIFO) principle.
+  - Operations: Enqueue (add an element to the end), Dequeue (remove the front element), Peek (view the front element).
+
+### Linked List Implementation of Queue
+- **Linked List**
+  - A data structure consisting of a sequence of elements, where each element points to the next one.
+  - Elements are called nodes, and each node contains data and a reference (or pointer) to the next node.
+
+- **Queue Implementation using Linked List**
+  - **Node Structure**
+    - Each node contains data and a pointer to the next node.
+  - **Queue Operations**
+    - **Enqueue**: Add a new node to the end of the queue.
+    - **Dequeue**: Remove the node from the front of the queue.
+    - **Peek**: View the data of the front node without removing it.
+  - **Advantages**
+    - Dynamic size: Can grow and shrink as needed.
+    - Efficient insertion and deletion at both ends.
+  - **Disadvantages**
+    - Requires additional memory for pointers.
+    - More complex to implement compared to arrays.
+
+Certainly! Here is the summarized text in a structured format:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek**: Views the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front**: Views the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue implemented using a linked list allows for efficient enqueue and dequeue operations.
+- **Structure**:
+  - **Node**: Each element in the queue is a node containing data and a reference to the next node.
+  - **Front**: Points to the front node of the queue.
+  - **Rear**: Points to the rear node of the queue.
+- **Operations**:
+  - **Enqueue**: Adds a new node to the rear of the queue.
+  - **Dequeue**: Removes the node from the front of the queue.
+  - **Front**: Returns the data of the front node without removing it.
+  - **IsEmpty**: Checks if the queue is empty by verifying if the front node is null.
+
+This structured format provides a clear overview of the concepts and operations for stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Here is the structured summary of the given text:
+
+### Data Structures
+1. **STACK**
+   - **Definition**: A linear data structure that follows the Last-In-First-Out (LIFO) principle.
+   - **Operations**:
+     - **Push**: Adds an element to the top of the stack.
+     - **Pop**: Removes the top element from the stack.
+     - **Peek/Top**: Returns the top element without removing it.
+     - **IsEmpty**: Checks if the stack is empty.
+
+2. **QUEUE**
+   - **Definition**: A linear data structure that follows the First-In-First-Out (FIFO) principle.
+   - **Operations**:
+     - **Enqueue**: Adds an element to the end of the queue.
+     - **Dequeue**: Removes the element from the front of the queue.
+     - **Front/Peek**: Returns the front element without removing it.
+     - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+- **Definition**: A queue implemented using a linked list where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**: Adds a new node with the given data at the end of the queue.
+  - **Dequeue**: Removes the node from the front of the queue and returns its data.
+  - **Front/Peek**: Returns the data of the front node without removing it.
+  - **IsEmpty**: Checks if the queue is empty by verifying if the front node is null.
+
+This structured format provides a clear overview of the key concepts and operations related to stacks, queues, and the linked list implementation of a queue.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**: Create a new node with the given data and append it to the end of the queue.
+  - **Dequeue**: Remove the node from the front of the queue and return its data.
+  - **Front/Peek**: Return the data of the front node without removing it.
+  - **IsEmpty**: Check if the queue is empty by verifying if the front node is null.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and their implementation using a linked list.
+
+Certainly! Here is a structured summary of the provided text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list, where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - Set the next pointer of the new node to the current rear node.
+    - Update the rear pointer to the new node.
+  - **Dequeue**:
+    - Check if the queue is empty. If it is, return an error or a default value.
+    - Store the data of the front node.
+    - Update the front pointer to the next node.
+    - Free the memory of the dequeued node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null. If it is, the queue is empty; otherwise, it is not empty.
+
+This structured format provides a clear overview of the stack and queue data structures, as well as a linked list implementation of a queue.
+
+Certainly! Here is the structured summary of the text:
+
+### Data Structures
+- **STACK**
+  - A linear data structure that follows the Last In, First Out (LIFO) principle.
+  - Operations: `push`, `pop`, `peek`, `isEmpty`.
+
+- **QUEUE**
+  - A linear data structure that follows the First In, First Out (FIFO) principle.
+  - Operations: `enqueue`, `dequeue`, `peek`, `isEmpty`.
+
+### Linked List Implementation of Queue
+- **Node Structure**
+  - Each node contains a value and a reference (or pointer) to the next node.
+  - Example:
+    ```python
+    class Node:
+        def __init__(self, value):
+            self.value = value
+            self.next = None
+    ```
+
+- **Queue Operations**
+  - **enqueue**: Adds an element to the end of the queue.
+    - Example:
+      ```python
+      def enqueue(self, value):
+          new_node = Node(value)
+          if self.rear is None:
+              self.front = self.rear = new_node
+          else:
+              self.rear.next = new_node
+              self.rear = new_node
+      ```
+
+  - **dequeue**: Removes an element from the front of the queue.
+    - Example:
+      ```python
+      def dequeue(self):
+          if self.front is None:
+              raise Exception("Queue is empty")
+          value = self.front.value
+          self.front = self.front.next
+          if self.front is None:
+              self.rear = None
+          return value
+      ```
+
+  - **peek**: Returns the value of the front element without removing it.
+    - Example:
+      ```python
+      def peek(self):
+          if self.front is None:
+              raise Exception("Queue is empty")
+          return self.front.value
+      ```
+
+  - **isEmpty**: Checks if the queue is empty.
+    - Example:
+      ```python
+      def isEmpty(self):
+          return self.front is None
+      ```
+
+- **Initialization**
+  - The queue is initialized with `front` and `rear` pointers set to `None`.
+  - Example:
+    ```python
+    class Queue:
+        def __init__(self):
+            self.front = None
+            self.rear = None
+    ```
+
+This structured format summarizes the key concepts and operations related to stacks, queues, and their linked list implementation.
+
+Sure, here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- **Definition**: A queue implemented using a linked list.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue by creating a new node and appending it to the end of the linked list.
+  - **Dequeue**: Removes the element from the front of the queue by removing the node at the front of the linked list.
+  - **Front/Peek**: Returns the front element without removing it by accessing the front node of the linked list.
+  - **IsEmpty**: Checks if the queue is empty by checking if the front node is null.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and a linked list implementation of a queue.
+
+Certainly! Here is a structured summary of the text related to "STACK," "QUEUE," and "Linked List Implementation of Queue":
+
+### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+- **Applications**: Function call management, undo mechanisms, and expression evaluation.
+
+### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+- **Applications**: Scheduling, breadth-first search, and task management.
+
+### Linked List Implementation of Queue
+- **Structure**:
+  - **Nodes**: Each node contains data and a reference (or pointer) to the next node.
+  - **Head**: Points to the front node of the queue.
+  - **Tail**: Points to the last node of the queue.
+- **Operations**:
+  - **Enqueue**:
+    1. Create a new node with the given data.
+    2. If the queue is empty, set both head and tail to the new node.
+    3. Otherwise, set the next pointer of the tail node to the new node and update the tail to the new node.
+  - **Dequeue**:
+    1. If the queue is empty, return an error or null.
+    2. If the queue has only one node, set both head and tail to null.
+    3. Otherwise, move the head to the next node and update the tail if necessary.
+  - **Front/Peek**:
+    1. Return the data of the head node.
+  - **IsEmpty**:
+    1. Check if the head is null.
+
+### Advantages of Linked List Implementation
+- **Dynamic Size**: Can grow and shrink dynamically.
+- **Efficient Dequeue**: Direct access to the front node without traversal.
+
+### Disadvantages of Linked List Implementation
+- **Memory Overhead**: Requires additional memory for pointers.
+- **Complexity**: More complex to implement and manage compared to array-based implementations.
+
+This structured format provides a clear overview of the concepts and their implementations.
+
+Certainly! Below is the structured summary of the provided text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list, where each node contains data and a reference to the next node.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, append the new node to the end of the queue.
+  - **Dequeue**:
+    - If the queue is empty, return an error or a special value.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null.
+
+This structured format provides a clear overview of the key concepts and operations for stacks, queues, and their implementation using linked lists.
+
+Here's the text summarized in a structured format:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+#### Linked List Implementation of Queue
+- **Definition**: A queue implemented using a linked list allows for efficient enqueue and dequeue operations.
+- **Key Components**:
+  - **Node**: Represents an element in the queue, containing data and a reference to the next node.
+  - **Front**: Points to the front node of the queue.
+  - **Rear**: Points to the rear node of the queue.
+- **Operations**:
+  - **Enqueue**:
+    1. Create a new node with the given data.
+    2. If the queue is empty, set the front and rear to the new node.
+    3. Otherwise, set the next reference of the rear node to the new node and update the rear to the new node.
+  - **Dequeue**:
+    1. If the queue is empty, return an error or a special value.
+    2. Otherwise, store the data of the front node.
+    3. If the queue has only one element, set both front and rear to null.
+    4. Otherwise, move the front pointer to the next node.
+  - **Front/Peek**:
+    1. If the queue is empty, return an error or a special value.
+    2. Otherwise, return the data of the front node.
+  - **IsEmpty**:
+    1. Return true if the front is null, otherwise return false.
+
+Certainly! Here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+#### Linked List
+- **Definition**: A linked list is a linear data structure where each element is a separate object. Each element (node) contains a data field and a reference (link) to the next node in the sequence.
+
+#### Queue Implementation Using Linked List
+- **Node Structure**:
+  - **Data**: Holds the value.
+  - **Next**: Points to the next node in the queue.
+
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, make the new node the front.
+    - Otherwise, add the new node to the end of the queue.
+  - **Dequeue**:
+    - Remove the front node.
+    - If the queue becomes empty, set the front and rear to null.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front node is null.
+
+This summary provides a concise overview of the stack and queue data structures and their implementation using a linked list.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+1. **STACK**
+   - **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+   - **Operations**:
+     - **Push**: Adds an element to the top of the stack.
+     - **Pop**: Removes the top element from the stack.
+     - **Peek/Top**: Returns the top element without removing it.
+     - **IsEmpty**: Checks if the stack is empty.
+
+2. **QUEUE**
+   - **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+   - **Operations**:
+     - **Enqueue**: Adds an element to the end of the queue.
+     - **Dequeue**: Removes the element from the front of the queue.
+     - **Front/Peek**: Returns the front element without removing it.
+     - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+- **Definition**: A queue can be implemented using a linked list to maintain the order of elements.
+- **Operations**:
+  - **Enqueue**: Add a new node to the end of the queue.
+  - **Dequeue**: Remove the node from the front of the queue.
+  - **Front/Peek**: Return the value of the front node without removing it.
+  - **IsEmpty**: Check if the queue is empty by verifying if the front node is null.
+
+This structured format provides a clear overview of the concepts and operations for both STACK and QUEUE data structures, as well as a linked list implementation of a QUEUE.
+
+Certainly! Below is a structured summary of the text provided:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue implemented using a linked list allows efficient enqueue and dequeue operations.
+- **Node Structure**:
+  - **Data**: The value or element to be stored.
+  - **Next**: A pointer to the next node in the linked list.
+- **Operations**:
+  - **Enqueue**:
+    1. Create a new node with the given data.
+    2. Set the next pointer of the new node to the current rear node.
+    3. Update the rear pointer to the new node.
+  - **Dequeue**:
+    1. Check if the queue is empty.
+    2. If not empty, update the front pointer to the next node.
+    3. Return the data of the dequeued node.
+  - **IsEmpty**: Check if the front pointer is null.
+  - **Front/Peek**: Return the data of the front node without removing it.
+
+This structured format provides a clear overview of the stack and queue data structures, as well as the implementation of a queue using a linked list.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the rear of the queue.
+  - **Dequeue**: Removes an element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list, where each node contains data and a pointer to the next node.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set the new node as the front.
+    - Otherwise, traverse to the rear of the queue and set the next pointer of the last node to the new node.
+  - **Dequeue**:
+    - If the queue is empty, return an error or handle appropriately.
+    - Otherwise, remove the front node and update the front pointer to the next node.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if the front pointer is null.
+
+This structured format provides a clear overview of the stack, queue, and linked list implementation of a queue.
+
+Certainly! Here is a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue implemented using a linked list.
+- **Structure**:
+  - **Node**: Each node contains data and a reference to the next node.
+  - **Queue**: Contains two pointers, `front` and `rear`, to manage the queue operations.
+
+- **Operations**:
+  - **Enqueue**:
+    1. Create a new node with the given data.
+    2. If the queue is empty, set both `front` and `rear` to the new node.
+    3. Otherwise, set the `next` pointer of the `rear` node to the new node and update `rear` to the new node.
+  - **Dequeue**:
+    1. If the queue is empty, return an error or null.
+    2. Otherwise, remove the node at the `front` pointer.
+    3. If the queue becomes empty, set both `front` and `rear` to null.
+    4. Otherwise, move the `front` pointer to the next node.
+  - **Front/Peek**:
+    1. Return the data of the node at the `front` pointer without removing it.
+  - **IsEmpty**:
+    1. Check if both `front` and `rear` are null. If so, the queue is empty.
+
+This structured format provides a clear overview of the stack and queue data structures, as well as the linked list implementation of a queue.
+
+Here's a structured summary of the text:
+
+### Data Structures
+
+#### STACK
+- **Definition**: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+- **Operations**:
+  - **Push**: Adds an element to the top of the stack.
+  - **Pop**: Removes the top element from the stack.
+  - **Peek/Top**: Returns the top element without removing it.
+  - **IsEmpty**: Checks if the stack is empty.
+
+#### QUEUE
+- **Definition**: A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+- **Operations**:
+  - **Enqueue**: Adds an element to the end of the queue.
+  - **Dequeue**: Removes the element from the front of the queue.
+  - **Front/Peek**: Returns the front element without removing it.
+  - **IsEmpty**: Checks if the queue is empty.
+
+### Linked List Implementation of Queue
+
+- **Definition**: A queue can be implemented using a linked list.
+- **Structure**:
+  - **Node**: Each node contains data and a pointer to the next node.
+  - **Front**: Points to the front node of the queue.
+  - **Rear**: Points to the rear node of the queue.
+- **Operations**:
+  - **Enqueue**:
+    - Create a new node with the given data.
+    - If the queue is empty, set both front and rear to the new node.
+    - Otherwise, set the next pointer of the rear node to the new node and update the rear pointer.
+  - **Dequeue**:
+    - If the queue is empty, return an error or handle it appropriately.
+    - Otherwise, remove the front node and update the front pointer.
+    - If the queue becomes empty after the dequeue, set both front and rear to null.
+  - **Front/Peek**:
+    - Return the data of the front node without removing it.
+  - **IsEmpty**:
+    - Check if both front and rear are null.
